@@ -14,7 +14,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -251,6 +251,7 @@ button {
     overflow: hidden;
     text-overflow: ellipsis;
     stroke: none;
+    margin-top: 64px;
 }
 
 button:hover {
@@ -412,6 +413,10 @@ input[type="email"] {
 
 /* Features Info */
 
+.features {
+  padding:80px 0;
+}
+
 .feature__img--wrapper {
   flex-shrink: 0; /* prevent from shrinking */
   width: 60px;
@@ -424,11 +429,16 @@ input[type="email"] {
   border-radius: 40px;
 }
 
+.features__info--container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .features__description--container {
   flex: 1; /* takes remaining space */
 }
 
-.feature__info--wrapper {
+.services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -437,11 +447,9 @@ input[type="email"] {
   padding: 0 40px;
 }
 
-.feature__info--container {
-  flex: 1 1 calc(33.333% - 16px); /* 3 per row with spacing */
-  min-width: 260px;
+.service {
   display: flex;
-  flex-direction: row;
+  width: calc(100%/3);
   align-items: flex-start;
   gap: 16px;
 }
@@ -453,15 +461,53 @@ justify-content: space-between;
 }
 
 
+/* 
 
-.feature__info--wrapper {
+STEPS 
+
+*/
+
+.step__Number {
+  color: #cbd50E0
+}
+
+.step__container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+}
+
+
+/* VALUES */
+
+.values__header {
+  text-align: left;
+}
+
+.values__tag {
+  text-align: left;
+}
+
+.value__title {
+  display: flex;
+  align-items: left;
+}
+
+.value__image--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ae6b4;
+  margin: 20px;
+}
+
+.value__name {
+  font-size: 20px;
+  color: #243E63;
+  margin: 0px 0px 0px 12px;
+}
+
+.values__img {
+  width: 50%;
 }
 
 
@@ -503,6 +549,18 @@ justify-content: space-between;
     flex: 1 1 100%;
   }
 }
+
+
+/* 
+STEPS
+ */
+
+.steps__info--container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
 
 /* Computers */
 
