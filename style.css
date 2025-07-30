@@ -16,6 +16,11 @@ body {
   color: rgb(100, 21, 255); 
 }
 
+.text__accent2 {
+  font-weight: 300px;
+  color: rgb(100, 21, 255); 
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -93,7 +98,7 @@ h4 {
 h5 {
     color: #000000;
     font-size: 20px;
-    font-weight:bold;
+    font-weight:600;
     text-align: left;
     line-height: 1.25;
     margin-bottom: 16px;
@@ -195,6 +200,8 @@ nav {
   height: 100px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 12px;
   background-color: #fff;
 }
@@ -203,9 +210,6 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav__logo {
@@ -246,9 +250,11 @@ nav {
 }
 
 button {
-    background-color: #7342d6;;
+    background-color: #6415ff;
     padding: 12px 32px;
     border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
     color: white;
     transition: all 300ms ease;
     white-space: nowrap;
@@ -257,7 +263,9 @@ button {
     border: none;
     display: inline-block;
     width: auto;
+    margin: 32px 0px 0px;
 }
+
 
 button:hover {
     background-color: #371093;
@@ -270,20 +278,22 @@ button:hover {
     font-weight: bold;
 }
 
-
 .form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px; Optional spacing
+  height: 68px;
   border: 1px solid #4c5566;
   border-radius: 50px;
-  padding: 4px;
+  padding: 8px;
   width: 100%;
   max-width: 400px; /* Optional: control size */
 }
 
-.form__wrapper form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px; /* Optional spacing */
+.btn_form {
+  margin: 8px;
+  height: 54px;
 }
 
 input[type="email"] {
@@ -292,6 +302,7 @@ input[type="email"] {
   background-color: transparent;
   border: none;
   outline: none;
+  /* padding: 20px 192px 20px 32px; */
 }
 
 .client__wrapper {
@@ -355,24 +366,22 @@ ABOUT ME
 .about-me__info {
     display: flex;
     flex-direction: row; /* side by side */
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 24px;
+    /* padding: 50px 24px; */
 }
-
-/* .about-me__info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .about-me__info--title {
   text-align: left;
+  font-size: 36px;
+  font-weight: 700;
 }
 
+.about-me__info--para {
+  margin: 32px 0px;
+}
 .input {
     padding-left: 16px;
 }
@@ -396,9 +405,13 @@ input[type="email"] {
     width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
+.about-me__image {
+  width: 100%;
+  max-width: 512px;
+}
 
 .client__wrapper {
   display: flex;
@@ -416,15 +429,25 @@ input[type="email"] {
 }
 
 
-/* Features Info */
+/* 
 
-.features {
-  padding:80px 0;
-}
+Features / Services 
+
+*/
 
 .features__row {
   display: flex;
   flex-direction: column;
+}
+
+.features__info--container {
+  margin-bottom: 40px;
+  text-align: center;
+  width: 75%;
+}
+
+.features {
+  padding:80px 0;
 }
 
 .feature__img--wrapper {
@@ -439,39 +462,37 @@ input[type="email"] {
   border-radius: 40px;
 }
 
-.features__info--container {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.features__description--container {
-  flex: 1; /* takes remaining space */
-}
-
-.features__info--container {
-  width: 75%;
-}
-
 .services {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* allow wrapping */
   justify-content: space-between;
-  gap: 24px;
-  margin-top: 20px;
+  gap: 32px;
   padding: 0 40px;
 }
 
 .service {
   display: flex;
-  width: calc(100%/3);
-  align-items: flex-start;
   gap: 16px;
+  flex: 0 1 calc(33.333% - 21.33px); /* 3 columns with spacing */
+  box-sizing: border-box;
 }
+
+/* 
+
+QUALITY 
+
+*/
 
 .quality__container {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+margin: 0px 64px 0px 0px;
+}
+
+.quality_img {
+  width: 50%;
+  border: .5px solid #7c8ba1;
 }
 
 
@@ -481,15 +502,20 @@ STEPS
 
 */
 
+.steps__info--container {
+  margin: 32px 0px 32px 64px;
+}
+
 .step__container {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  margin: 32px 0px 0px;
 }
 
 .step__Number {
   color: #cbd5E0;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .step__text--wrapper {
@@ -525,6 +551,7 @@ VALUES
 
 .values__header {
   text-align: left;
+  font-weight: 900;
 }
 
 .values__tag {
@@ -1120,6 +1147,12 @@ STEPS
     }
 }
 
+@media (max-width: 992px) {
+  .service {
+    flex: 0 1 calc(50% - 16px);
+  }
+}
+
 /* Small Phones*/
 
 @media (max-width: 480px) {
@@ -1153,5 +1186,7 @@ STEPS
     h2 {
     font-size: 20px;
   }
-  
+  .service {
+    flex: 0 1 100%;
+  }
 }

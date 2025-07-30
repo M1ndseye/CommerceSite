@@ -12,15 +12,15 @@
   </head>
   <body>
   <section id="landing">
+    <div class="row nav__row">
       <nav>
-        <div class="row nav__row">
-          <div class="nav__logo">
-            <img class="logo" src="_Assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" />
-            <div class="nav__logo--title">
+        <div class="nav__logo">
+          <img class="logo" src="_Assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" />
+          <div class="nav__logo--title">
               Treact
-            </div>
           </div>
-          <div class="nav__links">
+        </div>
+        <div class="nav__links">
             <ul class="nav_link--list">
               <li class="nav_link">
                 <a href="#"
@@ -43,10 +43,9 @@
                <a href="#" class="nav__link--anchor nav__link--anchor-primary" >Sign Up</a>
               </li>
             </ul>
-          </div>
-          </div>
         </div>
       </nav>
+    </div>
       <div class="modal">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -71,7 +70,7 @@
         <div class="about-me__info row">
           <div class="about-me__info--container">
                 <h1 class="about-me__info--title">
-                  Beautiful React Templates for you.
+                  Beautiful React Templates <span class="text__accent2">for you.</span>
                 </h1>
                 <p class="about-me__info--para">
                   Our templates are easy to setup, understand and customize. Fully
@@ -80,7 +79,7 @@
             <div class="form__wrapper">
               <form action="">
                 <input type="email" placeholder="your email address" />
-                <button>Get Started</button>
+                <button class="btn_form">Get Started</button>
               </form>
             </div>
             <div class="client__wrapper">
@@ -92,7 +91,7 @@
           </div>
           <div class="about-me__image--container">
             <figure>
-              <img src="./_Assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" />
+              <img class="about-me__image" src="./_Assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="" />
             </figure>
           </div>  
       </div>
@@ -100,19 +99,19 @@
   </header>
 </section>
 <main>
-  <section id="features">
-    <div class="row features__row">  
-      <div class="features__info--container">
+<section id="features">
+  <div class="row features__row">  
+    <div class="features__info--container">
         <h2 class="section__tag">FEATURES</h2>
         <h3 class="features__info--header section__title">We have Amazing Service.</h3>
         <h4 class="features__info--subhead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </h4>
-      </div>
-      <div class="services">
+    </div>
+    <div class="services">
         <div class="service">
             <figure class="feature__img--wrapper">
-              <i class="fa-solid fa-shield-halved"></i>
+              <img src="_Assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
             </figure>
           <div class="features__description--container">
             <h5 class="feature__header">Secure</h5>
@@ -121,10 +120,37 @@
         </div>
         <div class="service">
             <figure class="feature__img--wrapper">
-                  <i class="fa-solid fa-shield-halved"></i>
+                  <img src="_Assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
                 </figure>
                 <div class="features__description--container">
-                <h5 class="feature__header">Secure</h5>
+                <h5 class="feature__header">24/7 Support</h5>
+                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
+                </div>
+            </div>
+            <div class="service">
+                <figure class="feature__img--wrapper">
+                  <img src="_Assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
+                </figure>
+                <div class="features__description--container">
+                <h5 class="feature__header">Customizable</h5>
+                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
+                </div>
+            </div>
+            <div class="service">
+                <figure class="feature__img--wrapper">
+                  <img src="_Assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
+                </figure>
+                <div class="features__description--container">
+                <h5 class="feature__header">Reliable</h5>
+                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
+                </div>
+            </div>
+            <div class="service">
+                <figure class="feature__img--wrapper">
+                  <img src="_Assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
+                </figure>
+                <div class="features__description--container">
+                <h5 class="feature__header">Fast</h5>
                 <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
                 </div>
             </div>
@@ -135,35 +161,9 @@
                 <div class="features__description--container">
                 <h5 class="feature__header">Secure</h5>
                 <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
-                </div>
             </div>
-            <div class="service">
-                <figure class="feature__img--wrapper">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </figure>
-                <div class="features__description--container">
-                <h5 class="feature__header">Secure</h5>
-                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
-                </div>
-            </div>
-            <div class="service">
-                <figure class="feature__img--wrapper">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </figure>
-                <div class="features__description--container">
-                <h5 class="feature__header">Secure</h5>
-                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
-                </div>
-            </div>
-            <div class="service">
-                <figure class="feature__img--wrapper">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </figure>
-                <div class="features__description--container">
-                <h5 class="feature__header">Secure</h5>
-                <h6 class="feature__body">We strictly only deal with vendors that provide top notch security.</h6>
-            </div>
-    </div>
+    </div>      
+  </div>
 </section>
 <section id="quality">
             <div class="container">
@@ -177,6 +177,7 @@
                     </p>
                     <button>Learn More</button>
                   </div>
+                  <img class="quality_img" src="_Assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="">
                 </div>
             </div>
         </section>
@@ -188,7 +189,7 @@
                     </div>
                     <div class="steps__info--container">
                       <div class="section__tag steps__tag">STEPS</div>
-                      <h3 class="step__title">Easy to Get Started</h3>
+                      <h3 class="step__title">Easy to <strong class="text__accent">Get Started.</strong></h3>
                       <div class="step__container">
                         <div class="step__Number">
                           01
@@ -200,19 +201,19 @@
                       </div>
                       <div class="step__container">
                         <div class="step__Number">
-                          01
+                          02
                         </div>
                         <div class="step__text--wrapper">
-                        <h5>Register</h5>
+                        <h5>Download</h5>
                         <p>Create an account with us using Google or Facebook</p>
                         </div>
                       </div>
                       <div class="step__container">
                         <div class="step__Number">
-                          01
+                          03
                         </div>
                         <div class="step__text--wrapper">
-                        <h5>Register</h5>
+                        <h5>Run</h5>
                         <p>Create an account with us using Google or Facebook</p>
                         </div>
                       </div>
@@ -225,7 +226,7 @@
                 <div class="row values__row">
                     <div class="values__description">
                       <div class="section__tag values__tag">VALUES</div>
-                      <h3 class="values__header">We always abide by our principles.</h3>
+                      <h3 class="values__header">We always abide by our <strong class="text__accent">Principles.</strong></h3>
                       <p class="values__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, porro, ducimus totam, repellendus qui beatae in voluptas saepe veritatis rem quisquam vel cum hic sapiente minus quis et facere vero eius mollitia eaque. Earum, aliquam.</p>
                       <div class="value__title">
                         <figure class="value__image--wrapper"><i class="fa-solid fa-dollar-sign"></i></figure>
