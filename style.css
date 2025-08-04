@@ -76,7 +76,7 @@ h3 {
     color: #000;
     text-align: center;
     line-height: 1.25;
-    font-size: 36px;
+    font-size: 48px;
     font-weight:900;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -130,7 +130,7 @@ p {
     font-family: Inter, system-ui;
     font-weight:500;
     font-size: 16px;
-    color: #7C8BA1;
+    color: #243E63;
 }
 
 a {
@@ -235,6 +235,7 @@ nav {
     margin: 0 12px;
     color: #4c5566;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .nav__link--anchor-primary {
@@ -280,20 +281,22 @@ button:hover {
 
 .form__wrapper {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 14px; Optional spacing
   height: 68px;
   border: 1px solid #4c5566;
   border-radius: 50px;
-  padding: 8px;
+  padding: 4px;
   width: 100%;
   max-width: 400px; /* Optional: control size */
 }
 
 .btn_form {
-  margin: 8px;
+  margin: 2px;
   height: 54px;
+  padding: 12px 32px;
 }
 
 input[type="email"] {
@@ -381,6 +384,7 @@ ABOUT ME
 
 .about-me__info--para {
   margin: 32px 0px;
+  font-weight: 400;
 }
 .input {
     padding-left: 16px;
@@ -392,25 +396,23 @@ input[type="email"] {
   background-color: transparent;
 }
 
-/* LEFT SIDE */
 .about-me__info--container {
-    width: 40%;
-    padding-right: 24px;
+    width: 50%;
 }
-
-
-
-/* RIGHT SIDE */
 .about-me__image--container {
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .about-me__image {
   width: 100%;
   max-width: 512px;
+}
+
+.header__customers--title {
+  margin-top: 80px;
 }
 
 .client__wrapper {
@@ -426,6 +428,7 @@ input[type="email"] {
   height: auto;
   object-fit: contain;
   display: block;
+  margin: 16px 0px 0px;
 }
 
 
@@ -443,8 +446,14 @@ Features / Services
 .features__info--container {
   margin-bottom: 40px;
   text-align: center;
-  width: 75%;
+  width: 100%;
 }
+
+.features__info--subhead {
+  margin: 0 auto 40px;
+  text-align: center;
+  width: 80%;
+  }
 
 .features {
   padding:80px 0;
@@ -468,6 +477,7 @@ Features / Services
   justify-content: space-between;
   gap: 32px;
   padding: 0 40px;
+  margin: 0px 16px;
 }
 
 .service {
@@ -1103,11 +1113,61 @@ padding: 96px 32px;
     font-size: 24px;
   }
   .section__title {
-        font-size: 36px;
+        font-size: 48px;
   }
 
   .about-me__info--para {
     font-size: 18px;
+  }
+
+  .form__wrapper, .services, .quality__row, .steps__row, .values__row, .plans, .testimonials__row, .start__wrapper, .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  input {
+  border: 1px solid #4c5566;
+  border-radius: 50px;
+  padding: 4px;
+  width: 100%;
+  max-width: 400px; /* Optional: control size */
+}
+.form__wrapper {
+  border: none;
+}
+
+  .value__title {
+    display: flex;
+    align-items: center;
+  }
+  .section__tag {
+    text-align: center;
+  }
+
+  .testimonials__header, .testimonials__para, .testimonials__title, .start__title, .values__header, .values__para, .value__name, .value__para, .about-me__info--title, .about-me__info--para, .service, .step__title {
+  text-align: center;
+}
+
+.testimonial_stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: end;
+}
+.service, {
+  width: 50%;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+  .about-me__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center
   }
 
   .language {
@@ -1145,13 +1205,89 @@ STEPS
     #features .section__title, #pricing .section__title {
         font-size: 48px;
     }
+.about-me__info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+.about-me__info--para {
+  text-align: center;
+  width: 75%;
+}
+.about-me__info--title {
+      font-size: 30px;
+      text-align: center;
+    }
+.client__logo--container {
+  width: 70%;
+}
+    .features__info--container {
+    width: 100%;
+}
+    .about-me__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    }
+    .features__info--header {
+      font-size: 48px;
+    }
+    .features__info--subhead {
+
+    }
+    .features__info--subhead {
+    width: 70%;
+    max-width: 500px;
+  }
+  .section__title, .step__title {
+      font-size: 36px;
+      font-weight: 900;
+  }
+.steps__info--container {
+  width: 50%;
+}
 }
 
 @media (max-width: 992px) {
   .service {
     flex: 0 1 calc(50% - 16px);
   }
+  .services {
+    width: 75%;
+  }
+  .features__info--subhead {
+    width: 70%;
+    max-width: 500px;
+  }
 }
+
+@media (max-width: 768px) {
+  .service {
+    flex: 0 1 calc(100% - 16px);
+  }
+  .services {
+    width: 60%;
+    0%;
+  }
+  .features__description--container {
+    margin: 8px 0px 0px 16px;
+  }
+.features__info--container {
+  margin: 0 auto 40px;
+  text-align: center;
+  width: 60%;
+}
+.features__info--subhead {
+    width: 70%;
+    max-width: 500px;
+  }
+.features__info--header {
+  width: 100;
+}
+}
+
 
 /* Small Phones*/
 
@@ -1189,4 +1325,12 @@ STEPS
   .service {
     flex: 0 1 100%;
   }
+   .form__wrapper, .services, .service, .quality__row, .steps__row, .values__row, .plans, .testimonials__row, .start__wrapper, .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+    .testimonials__header, .testimonials__para, .testimonials__title, .start__title, .values__header, .values__para, .value__name, .value__para, .about-me__info--title, .about-me__info--para, .service, .feature__header, .feature__body {
+  text-align: center;
+}
 }
