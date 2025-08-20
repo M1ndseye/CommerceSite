@@ -1020,12 +1020,13 @@ PLANS / PRICING
 }
 .plans__blob {
   position: absolute;
-  top: 400px;
-  left: -250px;
+  top: 550px;
+  left: -275px;
   z-index: -5;
-  width: 600px;
-  height: 600px;
+  scale: .45;
+  opacity: 0.5;
 }
+
 
 /* 
 
@@ -1179,6 +1180,7 @@ START
 }
 
 .start__row {
+  position: absolute;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -1217,6 +1219,14 @@ START
   margin: 1px;
   border: solid 1px white;
   border-radius: 50px;
+}
+.start__blob--1 {
+  position: absolute;
+  top: 550px;
+  left: -275px;
+  z-index: -5;
+  scale: .45;
+  opacity: 0.5;
 }
 
 /* 
